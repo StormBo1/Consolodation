@@ -1,3 +1,26 @@
+"""
+HTML Template: displayScreen.html
+
+This HTML template displays information about Islamic Calligraphy, including its history, styles, and significance. It also provides navigation links, a logout button, and a login prompt if the user is not authenticated.
+
+Dependencies:
+    - Bootstrap 5.0.2 CSS: Used for styling components.
+    - Custom CSS (reviews/home.css): Additional custom styling for the page.
+    - JQuery 3.5.1: JavaScript library for DOM manipulation.
+    - Popper.js 2.11.6: Dependency for Bootstrap dropdowns, tooltips, and popovers.
+    - Bootstrap 5.0.2 JS: JavaScript functionalities provided by Bootstrap framework.
+
+Dynamic Content:
+    - User Authentication: Displays a welcome message if the user is authenticated.
+    - Calligraphy Information: Provides detailed information about Islamic calligraphy.
+    - Image: Displays an image related to Islamic calligraphy.
+    - Login Prompt: If the user is not authenticated, prompts the user to login.
+
+JavaScript Functions:
+    - toggleMenu(): Toggles the visibility of the navigation links menu when the menu icon is clicked.
+
+"""
+
 <!-- Calligraphy/displayScreen.html -->
 {% load static %}
 <!DOCTYPE html>
@@ -7,9 +30,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Islamic Calligraphy</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrF5b6EGGoI1WkmY5Eqd4e3qD" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'reviews/home.css' %}">
-    <!-- Add your custom CSS styles here -->
+    <!-- Custom CSS styles -->
     <style>
         body {
             background-image: url("{% static 'islamic_calligraphy_9.jpeg' %}");
@@ -105,8 +130,9 @@
             scroll-behavior: smooth;
         }
     </style>
-
+    <!-- Inline JavaScript -->
     <script>
+
         function toggleMenu() {
             var navLinks = document.getElementById('nav-links');
             navLinks.style.display = (navLinks.style.display === 'none' || navLinks.style.display === '') ? 'flex' : 'none';
@@ -115,34 +141,37 @@
 </head>
 
 <body>
-
+    <!-- Header Section -->
     <header>
-
         <nav>
-            <!-- Inside the nav section of your header -->
-
+            <!-- Navigation links -->
             <span id="tophat-dropdown">
                 <i onclick="toggleMenu()" id="menuOpenCloseIcon" class="material-icons">menu</i>
             </span>
             <div id="nav-links">
+                <!-- Dropdown Navigation Links -->
                 <a href="{% url 'about_calligraphy' %}" class="btn btn-link">About Calligraphy</a>
                 <a href="{% url 'artwork_list' style_id=1 %}" class="btn btn-link">Types of Artwork</a>
                 <a href="{% url 'style_list' %}" class="btn btn-link">Styles</a>
             </div>
         </nav>
+        <!-- Page Title -->
         <h1>Islamic Calligraphy</h1>
+        <!-- Logout Button -->
         <form action="{% url 'logout' %}" method="post">
             {% csrf_token %}
             <button type="submit" class="btn btn-danger">Logout</button>
         </form>
     </header>
-
+    <!-- Main content Section -->
     <main>
 
         {% if user.is_authenticated %}
+        <!-- Display if user is authenticated -->
         <p>Hello, {{ user.username }}! You are logged in.</p>
         <p>Welcome to your webpage. Here's a brief description of Calligraphy...</p>
         <br>
+        <!-- Calligraphy Information -->
         <p>ISLAMIC CALLIGRAPHY is the artistic practice of handwriting and calligraphy, in the languages which use Arabic alphabet or the alphabets derived from it.
            it includes Arabic, Persian, Ottoman, and Urdu calligraphy. It is known as khatt Arabi, which translates into Arabic line, design, or construction.
            The development of Islamic calligraphy is strongly tied to the Qur'an; chapters and excerpts from the Qur'an are a common and almost universal text upon which Islamic calligraphy is based.
@@ -153,14 +182,16 @@
             Islamic calligraphy developed from two major styles: Kufic and Naskh. There are several variations of each, as well as regionally specific styles.
             Islamic calligraphy has also been incorporated into modern art beginning with the post-colonial period in the Middle East, as well as the more recent style of calligraffiti.
         </p>
+        <!-- Image -->
         <div class="centered-image">
             <img src="{% static 'Calligraphy/islamic_calligraphy_9.jpeg' %}" alt="Islamic Calligraphy" style="width: 30%;">
         </div>
         {% else %}
+        <!-- Display if user is not authenticated -->
             <p>Please <a href="{% url 'login' %}" class="btn btn-primary">login</a> to continue.</p>
         {% endif %}
     </main>
-
+    <!-- Footer Section -->
     <footer>
         &copy; 2023 Islamic Calligraphy. All rights reserved.
     </footer>
