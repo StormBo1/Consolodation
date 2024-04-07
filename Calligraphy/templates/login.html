@@ -1,3 +1,14 @@
+"""
+html template: login.html
+
+Dependancies:
+
+    - Bootstrap 4.5.2 css: used for styling components
+
+Dynamic content:
+    - Login button
+"""
+
 <!-- templates\login.html -->
 
 <!DOCTYPE html>
@@ -6,6 +17,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -13,7 +25,9 @@
 <body class="bg-light">
 
     <div class="container mt-5">
+
         <h2>Login</h2>
+        <!-- login button -->
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
