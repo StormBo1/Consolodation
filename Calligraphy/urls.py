@@ -6,7 +6,6 @@ from .views import display_screen, about_calligraphy, styles_list, artwork_list,
 
 app_name = 'Calligraphy'
 
-
 urlpatterns = [
     path('', landing_page, name='landing_page'),
     path('authenticate_user/', authenticate_user, name='authenticate_user'),
