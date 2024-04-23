@@ -35,16 +35,16 @@ picture frame hanging on the walls in our homes , places of work, marketplaces e
 - GIT installed
 - Pip (python package installer)
 - Code editor IE. Pycharm, VS code etc
-- High performace computer (recomended)
+- Docker installed
 
 ##  Installation
 
 1. **Clone the repository:**
 
-   git clone https://github.com/StormBo1/GitPortfolios.git
+   git clone https://github.com/StormBo1/Consolidation.git
 
 2. **Navigate to Project directory:
-   cd GitPortfolios
+   cd Consolidation
 
 3. ** Install Dependancies:**
    GIT installed
@@ -81,6 +81,31 @@ Once you have successfuly change the page you will see the following:
 
 - Once you are done viewing the webpage, dont forget to logout and end the server in your terminal by pressing CTRL BREAK buttons together
 
+## Usage with venv
+
+1. Set up the Virtual Environment (venv)
+- Navigate to the project directory in your terminal.
+- Create a virtual environment using the following command:
+  - python -m venv venv
+- Activate the virtual environment:
+  - On Windows:
+  - venv\Scripts\activate
+- On macOS and Linux:
+  - source venv/bin/activate
+
+2. Run the project:
+- python manage.py runserver
+
+## Usage with Docker
+
+1. Build Docker Image:
+- Ensure Docker is installed and running:
+  - docker build -t arabic_calligraphy .
+
+2. Run Docker Container:
+- Once the image is built, run the Docker container:
+    - docker run -d -p 8000:8000 arabic_calligraphy
+
 ## Credits
 
 [Arabic Calligraphy](https://en.wikipedia.org/wiki/Arabic_calligraphy)
@@ -89,4 +114,4 @@ Once you have successfuly change the page you will see the following:
 
 ## URL to repository
 
-[GitPortfolios](https://github.com/StormBo1/GitPortfolios)
+[Consolidation](https://github.com/StormBo1/Consolidation)
