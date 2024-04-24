@@ -65,8 +65,8 @@ Make sure your are in the right directory.
 ![manage](https://github.com/StormBo1/Consolodation/Images/148717363/manage.jpeg)
 
 - Once you have successfully run the project a URL will appear in the terminal...click on it
+<<<<<<< HEAD
 ![development_server](https://github.com/StormBo1/Consolodation/Images/148717363/development_server)
-
 
 - A login page will pop up. select login
 ![login](https://github.com/StormBo1/Consolodation/Images/148717363/login.jpeg)
