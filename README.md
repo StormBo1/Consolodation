@@ -44,7 +44,7 @@ picture frame hanging on the walls in our homes , places of work, marketplaces e
    git clone https://github.com/StormBo1/Consolodation.git
 
 2. **Navigate to Project directory:
-   cd Consolidation
+   cd ConsolodationP
 
 3. ** Install Dependancies:**
    Run the following command to install the below dependancies: pip install -r requirements.txt
