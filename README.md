@@ -62,7 +62,7 @@ picture frame hanging on the walls in our homes , places of work, marketplaces e
 
 - Once the installation is done...run the project by typing in: python manage.py runserver 
 Make sure your are in the right directory.
-![python manage py runserver](https://github.com/StormBo1/Consolodation/Images/148717363/83c5b414-a5b5-4a2f-80dc-f12d6b0251a8)
+![python manage py runserver](https://github.com/StormBo1/Consolodation/Images)
 
 - Once you have successfully run the project a URL will appear in the terminal...click on it
 ![Screenshot 2024-03-12 155027](https://github.com/StormBo1/Consolodation/Images/148717363/86c120a7-d434-4848-a444-54b357e39828)
