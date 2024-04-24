@@ -69,7 +69,7 @@ Make sure your are in the right directory.
 
 
 - A login page will pop up. select login
-![login](https://github.com/StormBo1/Consolodation/Images/148717363/login.jpeg)
+![login](https://github.com/StormBo1/ConsolodationP/Images/148717363/login.jpeg)
 
 - After selecting login change the following
 - from http://127.0.0.1:8000/login/
