@@ -62,23 +62,23 @@ picture frame hanging on the walls in our homes , places of work, marketplaces e
 
 - Once the installation is done...run the project by typing in: python manage.py runserver 
 Make sure your are in the right directory.
-![manage](https://github.com/StormBo1/Consolodation/Images/148717363/83c5b414-a5b5-4a2f-80dc-f12d6b0251a8)
+![manage](https://github.com/StormBo1/Consolodation/Images/148717363/manage.jpeg)
 
 - Once you have successfully run the project a URL will appear in the terminal...click on it
-![development server](https://github.com/StormBo1/Consolodation/Images/148717363/86c120a7-d434-4848-a444-54b357e39828)
+![development_server](https://github.com/StormBo1/Consolodation/Images/148717363/development_server)
 
 
 - A login page will pop up. select login
-![login](https://github.com/StormBo1/Consolodation/Images/148717363/af64ee58-7ce0-405d-aa43-422a7e70b1ee)
+![login](https://github.com/StormBo1/Consolodation/Images/148717363/login.jpeg)
 
 - After selecting login change the following
 - from http://127.0.0.1:8000/login/
 - to http://127.0.0.1:8000/signup/
 Once you have successfuly change the page you will see the following:
-![signup](https://github.com/StormBo1/Consolodation/Images/148717363/07cca056-17b0-49a1-acdf-0470e1af3ae3)
+![signup](https://github.com/StormBo1/Consolodation/Images/148717363/signup.jpeg)
 
 - After succesfully signing up you will be redirected to the Display page of the project:
-![webpage](https://github.com/StormBo1/Consolodation/Images/148717363/03d34a25-b21e-4419-a3a2-d3d6702f3616)
+![webpage](https://github.com/StormBo1/Consolodation/Images/148717363/webpage.jpeg)
 
 - Once you are done viewing the webpage, dont forget to logout and end the server in your terminal by pressing CTRL BREAK buttons together
 
