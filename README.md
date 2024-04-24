@@ -47,6 +47,7 @@ picture frame hanging on the walls in our homes , places of work, marketplaces e
    cd Consolidation
 
 3. ** Install Dependancies:**
+   Run the following command to install the below dependancies: pip install -r requirements.txt
    GIT installed
    (in your terminal type the following)
    pip install
@@ -61,23 +62,23 @@ picture frame hanging on the walls in our homes , places of work, marketplaces e
 
 - Once the installation is done...run the project by typing in: python manage.py runserver 
 Make sure your are in the right directory.
-![python manage py runserver](https://github.com/StormBo1/GitPortfolios/assets/148717363/83c5b414-a5b5-4a2f-80dc-f12d6b0251a8)
+![python manage py runserver](https://github.com/StormBo1/Consolidation/assets/148717363/83c5b414-a5b5-4a2f-80dc-f12d6b0251a8)
 
 - Once you have successfully run the project a URL will appear in the terminal...click on it
-![Screenshot 2024-03-12 155027](https://github.com/StormBo1/GitPortfolios/assets/148717363/86c120a7-d434-4848-a444-54b357e39828)
+![Screenshot 2024-03-12 155027](https://github.com/StormBo1/Consolidation/assets/148717363/86c120a7-d434-4848-a444-54b357e39828)
 
 
 - A login page will pop up. select login
-![login](https://github.com/StormBo1/GitPortfolios/assets/148717363/af64ee58-7ce0-405d-aa43-422a7e70b1ee)
+![login](https://github.com/StormBo1/Consolidation/assets/148717363/af64ee58-7ce0-405d-aa43-422a7e70b1ee)
 
 - After selecting login change the following
 - from http://127.0.0.1:8000/login/
 - to http://127.0.0.1:8000/signup/
 Once you have successfuly change the page you will see the following:
-![Screenshot 2024-03-12 153441](https://github.com/StormBo1/GitPortfolios/assets/148717363/07cca056-17b0-49a1-acdf-0470e1af3ae3)
+![Screenshot 2024-03-12 153441](https://github.com/StormBo1/Consolidation/assets/148717363/07cca056-17b0-49a1-acdf-0470e1af3ae3)
 
 - After succesfully signing up you will be redirected to the Display page of the project:
-![Screenshot 2024-03-12 153735](https://github.com/StormBo1/GitPortfolios/assets/148717363/03d34a25-b21e-4419-a3a2-d3d6702f3616)
+![Screenshot 2024-03-12 153735](https://github.com/StormBo1/Consolidation/assets/148717363/03d34a25-b21e-4419-a3a2-d3d6702f3616)
 
 - Once you are done viewing the webpage, dont forget to logout and end the server in your terminal by pressing CTRL BREAK buttons together
 
