@@ -115,4 +115,4 @@ Once you have successfuly change the page you will see the following:
 
 ## URL to repository
 
-[Consolidation](https://github.com/StormBo1/Consolidation)
+[Consolodation](https://github.com/StormBo1/Consolodation)
