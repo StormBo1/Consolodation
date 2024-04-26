@@ -10,6 +10,7 @@ Welcome to Calligraphy's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   templates
 
 Indices and tables
 ==================

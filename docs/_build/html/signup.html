@@ -1,0 +1,24 @@
+<!--
+An HTML page for user registration in the Calligraphy app.
+
+This HTML page is used to register new users for access to the Calligraphy app. It displays a form
+prompting users to enter their username, email, and password. Upon submission of the form, users
+are registered as new users in the app.
+
+A signup button is included.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- registration/signup.html to be a registered user before you login -->
+
+{% extends 'signup.html' %}
+
+{% block content %}
+  <h2>Sign up</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign up</button>
+  </form>
+{% endblock %}

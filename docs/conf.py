@@ -21,6 +21,8 @@ release = '10 April 2024'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+html_extra_path = ['../Calligraphy/templates/Calligraphy']
+
 extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.viewcode',
               'sphinx.ext.napoleon'
