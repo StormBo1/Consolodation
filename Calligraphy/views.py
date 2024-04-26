@@ -19,7 +19,7 @@ def authenticate_user(request):
             request (HttpRequest): The HTTP request object.
 
         Returns:
-            HttpResponseRedirect: Redirects to the appropriate page.
+            HttpResponseRedirect: Redirects to the appropriate pages.
         """
     username = request.POST['username']
     password = request.POST['password']

@@ -23,4 +23,4 @@ urlpatterns = [
     path('', include('Calligraphy.urls', namespace="Calligraphy")),
 ]
 
- # Calligraphy/
+# Calligraphy

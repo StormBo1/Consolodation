@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calligraphy package &mdash; Calligraphy 26 April 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=eaa35ec0"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Calligraphy
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Calligraphy package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-Calligraphy.admin">Calligraphy.admin module</a></li>
+<li><a class="reference internal" href="#module-Calligraphy.apps">Calligraphy.apps module</a><ul>
+<li><a class="reference internal" href="#Calligraphy.apps.CalligraphyConfig"><code class="docutils literal notranslate"><span class="pre">CalligraphyConfig</span></code></a><ul>
+<li><a class="reference internal" href="#Calligraphy.apps.CalligraphyConfig.default_auto_field"><code class="docutils literal notranslate"><span class="pre">CalligraphyConfig.default_auto_field</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.apps.CalligraphyConfig.name"><code class="docutils literal notranslate"><span class="pre">CalligraphyConfig.name</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Calligraphy.models">Calligraphy.models module</a><ul>
+<li><a class="reference internal" href="#Calligraphy.models.Artwork"><code class="docutils literal notranslate"><span class="pre">Artwork</span></code></a><ul>
+<li><a class="reference internal" href="#Calligraphy.models.Artwork.title"><code class="docutils literal notranslate"><span class="pre">Artwork.title</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.Artwork.style"><code class="docutils literal notranslate"><span class="pre">Artwork.style</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.Artwork.artist"><code class="docutils literal notranslate"><span class="pre">Artwork.artist</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.Artwork.image"><code class="docutils literal notranslate"><span class="pre">Artwork.image</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.Artwork.uploaded_by"><code class="docutils literal notranslate"><span class="pre">Artwork.uploaded_by</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.Artwork.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Artwork.DoesNotExist</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.Artwork.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">Artwork.MultipleObjectsReturned</span></code></a></li>
+<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">Artwork.artist</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.Artwork.id"><code class="docutils literal notranslate"><span class="pre">Artwork.id</span></code></a></li>
+<li><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">Artwork.image</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.Artwork.objects"><code class="docutils literal notranslate"><span class="pre">Artwork.objects</span></code></a></li>
+<li><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">Artwork.style</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.Artwork.style_id"><code class="docutils literal notranslate"><span class="pre">Artwork.style_id</span></code></a></li>
+<li><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">Artwork.title</span></code></a></li>
+<li><a class="reference internal" href="#id4"><code class="docutils literal notranslate"><span class="pre">Artwork.uploaded_by</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.Artwork.uploaded_by_id"><code class="docutils literal notranslate"><span class="pre">Artwork.uploaded_by_id</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Calligraphy.models.CalligraphyStyle"><code class="docutils literal notranslate"><span class="pre">CalligraphyStyle</span></code></a><ul>
+<li><a class="reference internal" href="#Calligraphy.models.CalligraphyStyle.name"><code class="docutils literal notranslate"><span class="pre">CalligraphyStyle.name</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.CalligraphyStyle.description"><code class="docutils literal notranslate"><span class="pre">CalligraphyStyle.description</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.CalligraphyStyle.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">CalligraphyStyle.DoesNotExist</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.CalligraphyStyle.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">CalligraphyStyle.MultipleObjectsReturned</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.CalligraphyStyle.artwork_set"><code class="docutils literal notranslate"><span class="pre">CalligraphyStyle.artwork_set</span></code></a></li>
+<li><a class="reference internal" href="#id5"><code class="docutils literal notranslate"><span class="pre">CalligraphyStyle.description</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.CalligraphyStyle.id"><code class="docutils literal notranslate"><span class="pre">CalligraphyStyle.id</span></code></a></li>
+<li><a class="reference internal" href="#id6"><code class="docutils literal notranslate"><span class="pre">CalligraphyStyle.name</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.CalligraphyStyle.objects"><code class="docutils literal notranslate"><span class="pre">CalligraphyStyle.objects</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Calligraphy.models.SignUpForm"><code class="docutils literal notranslate"><span class="pre">SignUpForm</span></code></a><ul>
+<li><a class="reference internal" href="#Calligraphy.models.SignUpForm.email"><code class="docutils literal notranslate"><span class="pre">SignUpForm.email</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.SignUpForm.Meta"><code class="docutils literal notranslate"><span class="pre">SignUpForm.Meta</span></code></a><ul>
+<li><a class="reference internal" href="#Calligraphy.models.SignUpForm.Meta.fields"><code class="docutils literal notranslate"><span class="pre">SignUpForm.Meta.fields</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.SignUpForm.Meta.model"><code class="docutils literal notranslate"><span class="pre">SignUpForm.Meta.model</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Calligraphy.models.SignUpForm.base_fields"><code class="docutils literal notranslate"><span class="pre">SignUpForm.base_fields</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.SignUpForm.declared_fields"><code class="docutils literal notranslate"><span class="pre">SignUpForm.declared_fields</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.models.SignUpForm.media"><code class="docutils literal notranslate"><span class="pre">SignUpForm.media</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Calligraphy.tests">Calligraphy.tests module</a></li>
+<li><a class="reference internal" href="#module-Calligraphy.urls">Calligraphy.urls module</a></li>
+<li><a class="reference internal" href="#module-Calligraphy.views">Calligraphy.views module</a><ul>
+<li><a class="reference internal" href="#Calligraphy.views.about_calligraphy"><code class="docutils literal notranslate"><span class="pre">about_calligraphy()</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.views.artwork_list"><code class="docutils literal notranslate"><span class="pre">artwork_list()</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.views.authenticate_user"><code class="docutils literal notranslate"><span class="pre">authenticate_user()</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.views.display_screen"><code class="docutils literal notranslate"><span class="pre">display_screen()</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.views.landing_page"><code class="docutils literal notranslate"><span class="pre">landing_page()</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.views.login_user"><code class="docutils literal notranslate"><span class="pre">login_user()</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.views.logout_user"><code class="docutils literal notranslate"><span class="pre">logout_user()</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.views.signup_view"><code class="docutils literal notranslate"><span class="pre">signup_view()</span></code></a></li>
+<li><a class="reference internal" href="#Calligraphy.views.styles_list"><code class="docutils literal notranslate"><span class="pre">styles_list()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Calligraphy">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Calligraphy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Calligraphy package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Calligraphy.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="calligraphy-package">
+<h1>Calligraphy package<a class="headerlink" href="#calligraphy-package" title="Link to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Calligraphy.migrations.html">Calligraphy.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Calligraphy.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Calligraphy.migrations.html#module-Calligraphy.migrations.0001_initial">Calligraphy.migrations.0001_initial module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Calligraphy.migrations.html#Calligraphy.migrations.0001_initial.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Calligraphy.migrations.html#Calligraphy.migrations.0001_initial.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="Calligraphy.migrations.html#Calligraphy.migrations.0001_initial.Migration.initial"><code class="docutils literal notranslate"><span class="pre">Migration.initial</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="Calligraphy.migrations.html#Calligraphy.migrations.0001_initial.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Calligraphy.migrations.html#module-Calligraphy.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-Calligraphy.admin">
+<span id="calligraphy-admin-module"></span><h2>Calligraphy.admin module<a class="headerlink" href="#module-Calligraphy.admin" title="Link to this heading"></a></h2>
+</section>
+<section id="module-Calligraphy.apps">
+<span id="calligraphy-apps-module"></span><h2>Calligraphy.apps module<a class="headerlink" href="#module-Calligraphy.apps" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Calligraphy.apps.CalligraphyConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Calligraphy.apps.</span></span><span class="sig-name descname"><span class="pre">CalligraphyConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Calligraphy/apps.html#CalligraphyConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.apps.CalligraphyConfig" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.apps.CalligraphyConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#Calligraphy.apps.CalligraphyConfig.default_auto_field" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.apps.CalligraphyConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Calligraphy'</span></em><a class="headerlink" href="#Calligraphy.apps.CalligraphyConfig.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-Calligraphy.models">
+<span id="calligraphy-models-module"></span><h2>Calligraphy.models module<a class="headerlink" href="#module-Calligraphy.models" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Calligraphy.models.Artwork">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Calligraphy.models.</span></span><span class="sig-name descname"><span class="pre">Artwork</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Calligraphy/models.html#Artwork"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.models.Artwork" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>Model class for displaying artwork of calligraphy.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.Artwork.title">
+<span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#Calligraphy.models.Artwork.title" title="Link to this definition"></a></dt>
+<dd><p>The title of the artwork.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>models.CharField</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.Artwork.style">
+<span class="sig-name descname"><span class="pre">style</span></span><a class="headerlink" href="#Calligraphy.models.Artwork.style" title="Link to this definition"></a></dt>
+<dd><p>CalligraphyStyle associated with the artwork.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>models.ForeignKey</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.Artwork.artist">
+<span class="sig-name descname"><span class="pre">artist</span></span><a class="headerlink" href="#Calligraphy.models.Artwork.artist" title="Link to this definition"></a></dt>
+<dd><p>Artists name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>models.CharField</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.Artwork.image">
+<span class="sig-name descname"><span class="pre">image</span></span><a class="headerlink" href="#Calligraphy.models.Artwork.image" title="Link to this definition"></a></dt>
+<dd><p>Image file of the artwork.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>models.ImageField</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.Artwork.uploaded_by">
+<span class="sig-name descname"><span class="pre">uploaded_by</span></span><a class="headerlink" href="#Calligraphy.models.Artwork.uploaded_by" title="Link to this definition"></a></dt>
+<dd><p>The user who uploaded the artwork.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>models.ForeignKey</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="Calligraphy.models.Artwork.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#Calligraphy.models.Artwork.DoesNotExist" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="Calligraphy.models.Artwork.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#Calligraphy.models.Artwork.MultipleObjectsReturned" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">artist</span></span><a class="headerlink" href="#id0" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.Artwork.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#Calligraphy.models.Artwork.id" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">image</span></span><a class="headerlink" href="#id1" title="Link to this definition"></a></dt>
+<dd><p>Just like the FileDescriptor, but for ImageFields. The only difference is
+assigning the width/height to the width_field/height_field, if appropriate.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.Artwork.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#Calligraphy.models.Artwork.objects" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">style</span></span><a class="headerlink" href="#id2" title="Link to this definition"></a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.Artwork.style_id">
+<span class="sig-name descname"><span class="pre">style_id</span></span><a class="headerlink" href="#Calligraphy.models.Artwork.style_id" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#id3" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id4">
+<span class="sig-name descname"><span class="pre">uploaded_by</span></span><a class="headerlink" href="#id4" title="Link to this definition"></a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.Artwork.uploaded_by_id">
+<span class="sig-name descname"><span class="pre">uploaded_by_id</span></span><a class="headerlink" href="#Calligraphy.models.Artwork.uploaded_by_id" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Calligraphy.models.CalligraphyStyle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Calligraphy.models.</span></span><span class="sig-name descname"><span class="pre">CalligraphyStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Calligraphy/models.html#CalligraphyStyle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.models.CalligraphyStyle" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>Model for representing the Calligraphy styles.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.CalligraphyStyle.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#Calligraphy.models.CalligraphyStyle.name" title="Link to this definition"></a></dt>
+<dd><p>Displays the name of the calligraphy styles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>models.CharField</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.CalligraphyStyle.description">
+<span class="sig-name descname"><span class="pre">description</span></span><a class="headerlink" href="#Calligraphy.models.CalligraphyStyle.description" title="Link to this definition"></a></dt>
+<dd><p>Displays the description of each style.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>models.TextField()</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="Calligraphy.models.CalligraphyStyle.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#Calligraphy.models.CalligraphyStyle.DoesNotExist" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="Calligraphy.models.CalligraphyStyle.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#Calligraphy.models.CalligraphyStyle.MultipleObjectsReturned" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.CalligraphyStyle.artwork_set">
+<span class="sig-name descname"><span class="pre">artwork_set</span></span><a class="headerlink" href="#Calligraphy.models.CalligraphyStyle.artwork_set" title="Link to this definition"></a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">description</span></span><a class="headerlink" href="#id5" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.CalligraphyStyle.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#Calligraphy.models.CalligraphyStyle.id" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id6">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#id6" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.CalligraphyStyle.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#Calligraphy.models.CalligraphyStyle.objects" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Calligraphy.models.SignUpForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Calligraphy.models.</span></span><span class="sig-name descname"><span class="pre">SignUpForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Calligraphy/models.html#SignUpForm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.models.SignUpForm" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">UserCreationForm</span></code></p>
+<p>Form for user sign-up.</p>
+<p>Allows Django’s UserCreationForm to include an email field.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.SignUpForm.email">
+<span class="sig-name descname"><span class="pre">email</span></span><a class="headerlink" href="#Calligraphy.models.SignUpForm.email" title="Link to this definition"></a></dt>
+<dd><p>A field for entering the user email.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>forms.EmailField</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Calligraphy.models.SignUpForm.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/Calligraphy/models.html#SignUpForm.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.models.SignUpForm.Meta" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Meta class for SignUpForm.</p>
+<p>Specifies the model and fields to be included in the form.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.SignUpForm.Meta.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('username',</span> <span class="pre">'email',</span> <span class="pre">'password1',</span> <span class="pre">'password2')</span></em><a class="headerlink" href="#Calligraphy.models.SignUpForm.Meta.fields" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.SignUpForm.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#Calligraphy.models.SignUpForm.Meta.model" title="Link to this definition"></a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.SignUpForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'email':</span> <span class="pre">&lt;django.forms.fields.EmailField</span> <span class="pre">object&gt;,</span> <span class="pre">'password1':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password2':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'username':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#Calligraphy.models.SignUpForm.base_fields" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Calligraphy.models.SignUpForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'email':</span> <span class="pre">&lt;django.forms.fields.EmailField</span> <span class="pre">object&gt;,</span> <span class="pre">'password1':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password2':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#Calligraphy.models.SignUpForm.declared_fields" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Calligraphy.models.SignUpForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#Calligraphy.models.SignUpForm.media" title="Link to this definition"></a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-Calligraphy.tests">
+<span id="calligraphy-tests-module"></span><h2>Calligraphy.tests module<a class="headerlink" href="#module-Calligraphy.tests" title="Link to this heading"></a></h2>
+</section>
+<section id="module-Calligraphy.urls">
+<span id="calligraphy-urls-module"></span><h2>Calligraphy.urls module<a class="headerlink" href="#module-Calligraphy.urls" title="Link to this heading"></a></h2>
+</section>
+<section id="module-Calligraphy.views">
+<span id="calligraphy-views-module"></span><h2>Calligraphy.views module<a class="headerlink" href="#module-Calligraphy.views" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="Calligraphy.views.about_calligraphy">
+<span class="sig-prename descclassname"><span class="pre">Calligraphy.views.</span></span><span class="sig-name descname"><span class="pre">about_calligraphy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Calligraphy/views.html#about_calligraphy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.views.about_calligraphy" title="Link to this definition"></a></dt>
+<dd><p>Tells you a little about writing beautifully.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – The thing you send when you want to learn about writing beautifully.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>It tells you a little about writing beautifully.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Calligraphy.views.artwork_list">
+<span class="sig-prename descclassname"><span class="pre">Calligraphy.views.</span></span><span class="sig-name descname"><span class="pre">artwork_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Calligraphy/views.html#artwork_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.views.artwork_list" title="Link to this definition"></a></dt>
+<dd><p>Shows you a list of beautiful drawings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – The thing you send when you want to see beautiful drawings.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>It shows you a list of beautiful drawings.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Calligraphy.views.authenticate_user">
+<span class="sig-prename descclassname"><span class="pre">Calligraphy.views.</span></span><span class="sig-name descname"><span class="pre">authenticate_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Calligraphy/views.html#authenticate_user"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.views.authenticate_user" title="Link to this definition"></a></dt>
+<dd><p>Authenticates the user based on the provided username and password.</p>
+<p>Redirects to the login page if authentication fails.
+Redirects to the display screen if authentication succeeds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – The HTTP request object.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Redirects to the appropriate pages.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponseRedirect</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Calligraphy.views.display_screen">
+<span class="sig-prename descclassname"><span class="pre">Calligraphy.views.</span></span><span class="sig-name descname"><span class="pre">display_screen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Calligraphy/views.html#display_screen"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.views.display_screen" title="Link to this definition"></a></dt>
+<dd><p>Shows you the main page of the app.</p>
+<p>If you haven’t logged in, it takes you back to the login page.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – The thing you send when you want to see the main page.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>It shows you the main page if you’re logged in, otherwise it sends you to login first.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Calligraphy.views.landing_page">
+<span class="sig-prename descclassname"><span class="pre">Calligraphy.views.</span></span><span class="sig-name descname"><span class="pre">landing_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Calligraphy/views.html#landing_page"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.views.landing_page" title="Link to this definition"></a></dt>
+<dd><p>Shows you the first page of the app.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – The thing you send when you start the app.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>It shows you the first page of the app.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Calligraphy.views.login_user">
+<span class="sig-prename descclassname"><span class="pre">Calligraphy.views.</span></span><span class="sig-name descname"><span class="pre">login_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Calligraphy/views.html#login_user"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.views.login_user" title="Link to this definition"></a></dt>
+<dd><p>Shows you a page to put in your username and password.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – The thing you send when you want to login.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>It shows you a page where you can put in your username and password.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Calligraphy.views.logout_user">
+<span class="sig-prename descclassname"><span class="pre">Calligraphy.views.</span></span><span class="sig-name descname"><span class="pre">logout_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Calligraphy/views.html#logout_user"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.views.logout_user" title="Link to this definition"></a></dt>
+<dd><p>Shows you a page to say goodbye.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – The thing you send when you want to logout.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>It shows you a page to say goodbye.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Calligraphy.views.signup_view">
+<span class="sig-prename descclassname"><span class="pre">Calligraphy.views.</span></span><span class="sig-name descname"><span class="pre">signup_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Calligraphy/views.html#signup_view"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.views.signup_view" title="Link to this definition"></a></dt>
+<dd><p>Helps you create a new account.</p>
+<p>If you fill out a form correctly, you get a new account and can start using it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – The thing you send when you want to make a new account.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>It gives you a form to fill out or sends you somewhere else.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Calligraphy.views.styles_list">
+<span class="sig-prename descclassname"><span class="pre">Calligraphy.views.</span></span><span class="sig-name descname"><span class="pre">styles_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Calligraphy/views.html#styles_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Calligraphy.views.styles_list" title="Link to this definition"></a></dt>
+<dd><p>Shows you a list of different ways to write beautifully.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – The thing you send when you want to see different ways of writing beautifully.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>It shows you a list of different ways to write beautifully.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-Calligraphy">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Calligraphy" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Shafiek.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
